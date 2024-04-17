@@ -1,13 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./**/*.{razor,html,cshtml}"
+    "wwwroot/**/*.{razor,html,cshtml}",
+    "Components/**/*.{razor,html,cshtml}",
+    "Styles/**/*.{razor,html,cshtml}",
   ],
   theme: {
     extend: {},
   },
   plugins: [
-      require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 }
 
